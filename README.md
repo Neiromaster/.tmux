@@ -21,21 +21,20 @@ existing `~/.tmux.conf` first)
 ```shell
 $ cd
 $ git clone https://github.com/neiromaster/tmux.git
-$ cd .tmux
+$ cd tmux
 $ stow --target="$HOME" tmux
 ```
 
-💡 You can clone the repository anywhere you want, provided you create the
-proper `~/.tmux.conf` symlink and you copy the `.tmux.conf.local` sample file in
-your home directory:
+💡 You can clone the repository anywhere and then do a stow 
+for the tmux directory as in the example above:
 
-```
+```shell
 $ git clone https://github.com/neiromaster/tmux.git /path/to/oh-my-tmux
-$ ln -s -f /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
-$ cp /path/to/oh-my-tmux/.tmux.conf.local ~/.tmux.conf.local
+$ cd /path/to/oh-my-tmux
+$ stow --target="$HOME" tmux
 ```
 
-Then proceed to [customize] your `~/.tmux.conf.local` copy.
+Then proceed to [customize] your `~/.tmux.conf.local`.
 
 [customize]: #configuration
 
